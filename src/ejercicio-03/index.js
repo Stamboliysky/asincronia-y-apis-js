@@ -1,1 +1,18 @@
-// Escribe tu código aquí:
+// Ejercicio 3: asinc/await
+
+async function operacionAsincronica() {
+  await new Promise
+    ((resolve) =>
+    setTimeout(resolve,1000))
+  return 'Operacion completada'
+}
+
+async function 
+ejecutarOperacion() {
+    const resultado = 
+    await
+    operacionAsincronica()
+    console.log
+    (resultado)
+}
+ejecutarOperacion()
