@@ -1,1 +1,13 @@
-// Escribe tu código aquí:
+// Ejercicio-02: Promises
+
+const miPromise = new Promise((resolve, reject) => { 
+    setTimeout(() =>{
+        resolve('Promise resuelta')
+
+    },3000) 
+    
+})
+
+miPromise.then((resultado) => {
+    console.log(resultado)
+})
